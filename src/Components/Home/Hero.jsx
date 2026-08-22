@@ -15,7 +15,7 @@ function Hero() {
      pt-4  md:self-start md:mt-16 md:px-4 md:ml-5 lg:px-6 lg:ml-10 '>
       
       <div className='flex items-center  h-8  w-fit 
-       border border-emerald-700 rounded-md pr-2'>
+       border border-emerald-500 rounded-2xl pr-2'>
         <Lottie 
          src={programing4}
          autoplay 
@@ -23,7 +23,7 @@ function Hero() {
          className='h-18 w-18 -ml-6'
         
         />
-         <div className='font-hero text-white text-xl -ml-5'>AI-Powered Learning </div>
+         <div className='font-hero text-white text-lg md:text-xl -ml-5'>AI-Powered Learning </div>
 
       </div>
       <p className='pt-4 text-4xl text-center md:text-left md:text-5xl lg:text-6xl
