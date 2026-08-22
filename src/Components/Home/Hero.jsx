@@ -5,11 +5,11 @@ import programing from '../../assets/programing.json'
 
 function Hero() {
   return (
-    <div className="bg-[url('59278.jpg')] min-h-[calc(100vh-80px)]  w-full bg-cover bg-no-repeat
+    <div className="bg-[url('/herobg.jpg')] min-h-[calc(100vh-80px)]  w-full bg-cover bg-no-repeat
      relative flex flex-col md:flex-row items-center gap-5 ">
 
     <div className='border  md:w-1/2 w-full border-amber-300 self-start mt-5'>
-      l
+      
       <p>hello</p>
     </div>
 
