@@ -1,1 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alike&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+
 @import "tailwindcss";
+
+@theme
+{
+    --font-hero:"Space Grotesk", sans-serif;
+    --font-hero1:"Alike", serif;
+    
+}
