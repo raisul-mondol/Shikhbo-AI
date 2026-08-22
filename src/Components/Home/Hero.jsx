@@ -3,15 +3,17 @@ import { Lottie } from "lottie-react"
 import programing from '../../assets/programing.json'
 import programing4 from '../../assets/programing4.json'
 import ButtonB from '../ButtonB'
+import { ArrowRight } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 
 
 function Hero() {
   return (
     <div className="bg-[url('/herobg.jpg')] min-h-[calc(100vh-80px)]  w-full bg-cover bg-no-repeat
-     relative flex flex-col md:flex-row items-center gap-5 ">
+     relative flex flex-col md:flex-row items-center gap-4 md:gap-5 ">
 
-    <div className='border  md:w-1/2 w-full border-amber-300 flex flex-col items-center md:items-start
+    <div className=' md:w-[52%] lg:w-1/2 w-full flex flex-col items-center md:items-start
      pt-4  md:self-start md:mt-16 md:px-4 md:ml-5 lg:px-6 lg:ml-10 '>
       
       <div className='flex items-center  h-8  w-fit 
@@ -23,21 +25,49 @@ function Hero() {
          className='h-18 w-18 -ml-6'
         
         />
-         <div className='font-hero text-white text-lg md:text-xl -ml-5'>AI-Powered Learning </div>
+         <div className=' text-white text-lg md:text-xl -ml-5'>AI-Powered Learning </div>
 
       </div>
       <p className='pt-4 text-4xl text-center md:text-left md:text-5xl lg:text-6xl
        text-white font-semibold md:font-bold'>Next-Gen <span className='bg-linear-to-r from-emerald-300 to-emerald-600
         bg-clip-text text-transparent 
-        '>Tech </span > Learning With 
+        '>Tech </span >Learning With 
         <span className='text-emerald-400 text-shadow-2xs text-shadow-white'> AI</span></p>
 
-        <p className='pt-10 md:pt-15 lg:pt-17 text-center md:text-left leading-7 px-3 md:px-0 text-white 
-         text-base lg:text-lg  font-hero1'>Learn programming from the fundamentals to advanced AI-powered development. Build real-world projects and become ready for the future of tech.</p>
-         <ButtonB>get Started</ButtonB>
+        <p className='pt-10 md:pt-15 lg:pt-17 text-center md:text-left leading-7 px-3 md:px-0 text-cyan-50
+         text-base lg:text-lg  '>Learn programming from the fundamentals to advanced AI-powered development. Build real-world projects and become ready for the future of tech.</p>
+        
+        
+         <div className=' mt-5 w-full flex justify-center md:justify-start'>
+
+
+          <div className='flex flex-col md:flex-row gap-3 w-[60%] md:w-auto '>
+          <ButtonB className='w-full md:w-auto'>
+          <span className="flex  gap-2 items-center justify-center whitespace-nowrap">
+              Get Started
+                <ArrowRight
+                     size={18}
+                 className="transition-transform duration-300 group-hover:translate-x-1" />
+   </span></ButtonB>
+
+
+        <ButtonB className='w-full md:w-auto'
+                onClick={() =>
+            window.open("https://wa.me/8801710070606", "_blank")}>
+                                         
+
+          <span className="flex items-center justify-center gap-2 whitespace-nowrap">
+                              Get Expert Support
+                             <FaWhatsapp size={20} />
+          </span>
+          </ButtonB>
+          </div>
+          
+
+         </div>
     </div>
 
-    <div className=' md:h-96 md:w-1/2 h-90 w-full  flex justify-center pt-4  '>
+    <div className=' md:h-96 md:w-[48%] lg:w-1/2 h-90 w-full  flex justify-center pt-4  '>
       <div className='bg-white/7 backdrop-blur-2xl border border-emerald-700/20 shadow-lg shadow-black/20
          lg:h-85 md:h-75 h-60 lg:w-[75%] md:w-[78%] w-[80%] relative '>
 
