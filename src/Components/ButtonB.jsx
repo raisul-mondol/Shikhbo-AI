@@ -13,7 +13,7 @@ function ButtonB({ children, className = "", onClick }) {
         relative
         overflow-hidden
         px-5
-        py-2.5
+        py-3
         md:px-6
         md:py-3
         rounded-lg
