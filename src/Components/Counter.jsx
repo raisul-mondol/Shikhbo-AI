@@ -1,37 +1,41 @@
-import React, { useEffect } from 'react'
-import { animate, motion, useMotionValue, useTransform } from 'motion/react'
+import {
+  motion,
+  useMotionValue,
+  useTransform,
+  animate,
+} from "motion/react";
 
-function Counter({from=0,to,duration=2,className=""}) {
+const Counter = ({
+  from = 0,
+  to,
+  duration = 4,
+  decimals = 0,
+  className = "",
+}) => {
+  const count = useMotionValue(from);
 
-    const count=useMotionValue(from);
-    const rounded=useTransform(count,(value)=>Math.round(value));
+  const displayValue = useTransform(count, (latest) =>
+    latest.toFixed(decimals)
+  );
 
-    useEffect(()=>
-    {
-       const controls=animate(count,to,
-        {
-            duration,
-            ease:"easeOut",
-        }
-       );
-
-       return ()=> controls.stop();
-    },[count,to,duration]);
+  const startCount = () => {
+    animate(count, to, {
+      duration,
+      ease: "easeOut",
+    });
+  };
 
   return (
-    <motion.span 
-    
-    initial={{opacity:0}}
-    whileInView={{opacity:1}}
-    viewport={{once:true}}
-    
-    className={className}>
-   
-   {rounded}
-
-
+    <motion.span
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ amount: 0.8, once: true }}
+      onViewportEnter={startCount}
+      className={className}
+    >
+      {displayValue}
     </motion.span>
-  )
-}
+  );
+};
 
-export default Counter
+export default Counter;

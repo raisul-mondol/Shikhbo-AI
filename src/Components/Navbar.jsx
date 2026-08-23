@@ -57,12 +57,12 @@ function Navbar() {
      
         <NavLink
   to="/login"
-  className=" hidden md:flex items-center gap-2 px-5 py-1 rounded-2xl bg-linear-to-r from-emerald-600  via-green-500  to-emerald-500 
+  className=" hidden md:ml-2 md:flex items-center gap-2 px-5 py-1 rounded-2xl bg-linear-to-r from-emerald-600  via-green-500  to-emerald-500 
     backdrop-blur-2xl border border-white/20 text-white text-lg font-medium shadow-lg shadow-emerald-500/20
     hover:from-emerald-500 hover:via-green-400 hover:to-teal-400 hover:border-white/30 hover:shadow-emerald-400/40
     transition-all duration-300 hover:scale-105"
 >
-  <FaRegUser size={20} /> <span>Login</span>
+  <FaRegUser size={18} md:size={20} /> <span>Login</span>
 </NavLink> 
 
   {/* mobile menu */}
