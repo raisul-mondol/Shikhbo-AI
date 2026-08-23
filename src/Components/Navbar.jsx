@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { FaRegUser } from "react-icons/fa";
 import { useState } from 'react';
-
+import { motion, AnimatePresence } from "motion/react";
 
 function Navbar() {
   const [Isopen,SetIsopen]=useState(false);
@@ -70,9 +70,19 @@ function Navbar() {
   <button onClick={()=>SetIsopen(!Isopen)} className='md:hidden'>
     {Isopen?(<ImCross size={22} color='red'/>):(<GiHamburgerMenu size={30} color='white'/>)}
     </button>
-
+   <AnimatePresence>
     {Isopen && (
-      <div className=' bg-emerald-950 absolute flex flex-col top-15 left-0   w-full
+      <motion.div
+       initial={{ x: "100%" }}
+      animate={{ x: 0 }}
+      exit={{ x: "100%" }}
+      transition={{
+        type: "spring",
+        stiffness: 300,
+        damping: 25,
+        mass: 0.8,
+      }}
+       className=' md:hidden bg-emerald-950 absolute flex flex-col top-15 left-0   w-full
          pb-1'>
           {NavLinks.map((Link)=>
           
@@ -95,7 +105,7 @@ function Navbar() {
           )}
            
                   <NavLink to="/login" onClick={()=>SetIsopen(false)}
-          className="  px-5 py-3 mt-4 text-center rounded-2xl bg-linear-to-r from-emerald-600  via-green-500  to-emerald-500 
+          className="  px-3 py-1  mt-4 text-center rounded-2xl bg-linear-to-r from-emerald-600  via-green-500  to-emerald-500 
            backdrop-blur-2xl border border-white/20 text-white text-lg font-medium shadow-lg shadow-emerald-500/20
          hover:from-emerald-500 hover:via-green-400 hover:to-teal-400 hover:border-white/30 hover:shadow-emerald-400/40
         transition-all duration-300 hover:scale-101"
@@ -104,7 +114,8 @@ function Navbar() {
 </NavLink>
 
           
-        </div>  
+        </motion.div>  
+        
          
 
         
@@ -115,6 +126,7 @@ function Navbar() {
     
     
     }
+    </AnimatePresence>
 
   
 
