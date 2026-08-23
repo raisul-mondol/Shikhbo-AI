@@ -4,13 +4,15 @@ import {
   useTransform,
   animate,
 } from "motion/react";
+import { useEffect } from "react";
 
 const Counter = ({
   from = 0,
   to,
-  duration = 4,
+  duration = 2,
   decimals = 0,
-  className = "",
+  start = false,
+  className,
 }) => {
   const count = useMotionValue(from);
 
@@ -18,19 +20,20 @@ const Counter = ({
     latest.toFixed(decimals)
   );
 
-  const startCount = () => {
+  useEffect(() => {
+    if (!start) return;
+
     animate(count, to, {
       duration,
       ease: "easeOut",
     });
-  };
+  }, [start, to, duration, count]);
 
   return (
     <motion.span
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ amount: 0.8, once: true }}
-      onViewportEnter={startCount}
       className={className}
     >
       {displayValue}

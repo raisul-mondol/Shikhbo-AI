@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Lottie } from "lottie-react"
 import programing from '../../assets/programing.json'
 import programing4 from '../../assets/programing4.json'
@@ -8,6 +8,8 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaStar,FaStarHalfAlt } from "react-icons/fa";
 import Counter from '../Counter';
 import { FaChalkboardTeacher } from "react-icons/fa";
+import { Container, item,Normalreveal } from "../../Motion/Revel";
+import { motion } from "motion/react";
 
 
 
@@ -15,17 +17,27 @@ function Hero() {
   const picClassname = ` w-9 h-9 md:w-12 md:h-12 border-2 border-white object-cover transition-all hover:-translate-y-1 hover:border-green-500
   hover:shadow-md hover:shadow-green-400/40 rounded-full hover:scale-200 hover:z-60 hover:rounded-md
   hover:border-none  `;
+  const[CounterStart,SetCounterStart]=useState(false);
+
+
 
   return (
       
     <div className="bg-[url('/herobg.jpg')] min-h-130 w-full bg-cover bg-no-repeat
      relative flex flex-col md:flex-row items-center gap-4 md:gap-3 ">
 
-    <div className=' md:w-[52%] lg:w-1/2 w-full flex flex-col items-center md:items-start
+    <motion.div 
+    variants={Container}
+    initial="hidden"
+    animate="show"
+    className=' md:w-[52%] lg:w-1/2 w-full flex flex-col items-center md:items-start
      pt-4  md:self-start md:mt-16 md:px-4 md:ml-5 lg:px-6 lg:ml-10 '>
 
       
-      <div className='flex items-center  h-8  w-fit 
+      <motion.div
+      variants={item}
+      
+      className='flex items-center  h-8  w-fit 
        border border-emerald-500 rounded-2xl pr-2'>
         <Lottie 
          src={programing4}
@@ -36,18 +48,20 @@ function Hero() {
         />
          <div className=' text-white text-lg md:text-xl -ml-5'>AI-Powered Learning </div>
 
-      </div>
-      <p className='pt-4 text-4xl text-center md:text-left sm:text-5xl 
+      </motion.div>
+      <motion.p
+       variants={item}
+      className='pt-4 text-4xl text-center md:text-left sm:text-5xl 
        text-white font-semibold md:font-bold'>Next-Gen <span className='bg-linear-to-r from-emerald-300 to-emerald-600
         bg-clip-text text-transparent 
         '>Tech </span >Learning With 
-        <span className='text-emerald-400 text-shadow-2xs text-shadow-white'> AI</span></p>
+        <span className='text-emerald-400 text-shadow-2xs text-shadow-white'> AI</span></motion.p>
 
-        <p className='pt-10 md:pt-15  text-center md:text-left leading-7 px-3 md:px-0 text-cyan-50
-         text-base lg:text-xl sm:text-lg '>Learn programming from the fundamentals to advanced AI-powered development. Build real-world projects and become ready for the future of tech.</p>
+        <motion.p variants={item} className='pt-10 md:pt-15  text-center md:text-left leading-7 px-3 md:px-0 text-cyan-50
+         text-base lg:text-xl sm:text-lg '>Learn programming from the fundamentals to advanced AI-powered development. Build real-world projects and become ready for the future of tech.</motion.p>
         
         
-         <div className=' mt-5 md:mt-7 lg:mt-8 w-full flex justify-center md:justify-start'>
+         <motion.div  variants={item} className=' mt-5 md:mt-7 lg:mt-8 w-full flex justify-center md:justify-start'>
 
 
           <div className='flex flex-col md:flex-row gap-3 md:gap-4 w-[60%]  md:w-auto '>
@@ -73,18 +87,18 @@ function Hero() {
           </div>
           
 
-         </div>
-          <div className="flex items-center gap-1 mt-6">
+         </motion.div>
+          <motion.div variants={item} onAnimationComplete={()=>SetCounterStart(true)} className="flex items-center gap-1 mt-6">
                    {[1, 2, 3, 4].map((star) => (
     <FaStar key={star} className="text-yellow-400" size={20} />
                   ))}
                   <FaStarHalfAlt className="text-yellow-400" size={20} />
 
             <span className="ml-1 text-white text-xl">
-              <Counter from={0} to={4.9} decimals={1}>4.9</Counter>/5<span className='text-yellow-400 font-semibold'> Rating</span> </span>
-                       </div>
+            { CounterStart && (  <Counter from={0} to={4.9} decimals={1} start={CounterStart}>4.9</Counter>)}/5<span className='text-yellow-400 font-semibold'> Rating</span> </span>
+                       </motion.div>
 
-                   <div 
+                   <motion.div variants={item} onAnimationComplete={()=>SetCounterStart(true)}
                      
                       className=" bg-emerald-700/20 backdrop-blur-md rounded-2xl border border-emerald-400  w-fit mt-7 
                       px-8 sm:px-16 md:px-4 mb-1 relative pt-3  ">
@@ -112,14 +126,15 @@ function Hero() {
           
                         </div>
                        <div className="text-xl md:text-2xl text-white pt-2">
-                        <Counter     
+                       { CounterStart && ( <Counter     
                           from={0}
                           to={3000}
                           duration={4}
+                          start={CounterStart}
                           className="text-2xl font-bold bg-linear-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent"
               
                         
-                        />
+                        />)}
                           <span className="text-green-400  font-bold">+</span>
                          <span className="ml-2 text-lg whitespace-nowrap md:text-2xl text-white">
                            Active Students
@@ -131,12 +146,14 @@ function Hero() {
             
                       
                      
-                    </div>
+                    </motion.div>
 
 
-    </div>
+    </motion.div>
 
-    <div className=' md:h-96 md:w-[48%] lg:w-1/2 h-75 w-full  flex justify-center pt-6  '>
+    <motion.div 
+    variants={Normalreveal} initial="hidden" animate="show"
+    className=' md:h-96 md:w-[48%] lg:w-1/2 h-75 w-full  flex justify-center pt-6  '>
       <div className='bg-white/7 backdrop-blur-2xl border border-emerald-700/20 shadow-lg shadow-black/20
          lg:h-85 md:h-75 h-60 lg:w-[75%] md:w-[85%] w-[80%] sm:w-[65%] relative '>
 
@@ -178,7 +195,7 @@ function Hero() {
 
       </div>
 
-    </div>
+    </motion.div>
 
     
      
