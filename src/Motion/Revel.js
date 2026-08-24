@@ -64,7 +64,7 @@ export const PopParent = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.5,
     },
   },
 };
@@ -82,10 +82,9 @@ export const PopChild = {
     y: 0,
 
     transition: {
-      type: "spring",
-      stiffness: 120,
-      damping: 18,
-      mass: 0.8,
+      type: "tween",
+      duration: 0.5,
+      ease: [0.22, 1, 0.36, 1],
     },
   },
 };
