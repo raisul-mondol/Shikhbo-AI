@@ -13,6 +13,7 @@ const Counter = ({
   decimals = 0,
   start = false,
   className,
+   once = true,
 }) => {
   const count = useMotionValue(from);
 
@@ -33,7 +34,7 @@ const Counter = ({
     <motion.span
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ amount: 0.8, once: true }}
+      viewport={{ amount: 0.8, once }}
       className={className}
     >
       {displayValue}

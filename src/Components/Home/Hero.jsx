@@ -24,7 +24,7 @@ function Hero() {
   return (
       
     <div className="bg-[url('/herobg.jpg')] min-h-130 w-full bg-cover bg-no-repeat
-     relative flex flex-col md:flex-row items-center gap-4 md:gap-3 ">
+      flex flex-col md:flex-row items-center gap-4 md:gap-3 relative ">
 
     <motion.div 
     variants={Container}
@@ -94,14 +94,14 @@ function Hero() {
                   ))}
                   <FaStarHalfAlt className="text-yellow-400" size={20} />
 
-            <span className="ml-1 text-white text-xl">
-            { CounterStart && (  <Counter from={0} to={4.9} decimals={1} start={CounterStart}>4.9</Counter>)}/5<span className='text-yellow-400 font-semibold'> Rating</span> </span>
+            <span className="ml-1 text-white italic text-xl">
+            { CounterStart && (  <Counter from={0} to={4.9} decimals={1} start={CounterStart} >4.9</Counter>)}/5<span className='text-yellow-400 font-semibold'> Rating</span> </span>
                        </motion.div>
 
                    <motion.div variants={item} onAnimationComplete={()=>SetCounterStart(true)}
                      
                       className=" bg-emerald-700/20 backdrop-blur-md rounded-2xl border border-emerald-400  w-fit mt-7 
-                      px-8 sm:px-16 md:px-4 mb-1 relative pt-3  ">
+                      px-8  sm:px-12 md:px-10  mb-5 relative pt-3  ">
                       
            
                         <div className="flex  items-center pt-3 -ml-2 md:ml-0 ">
@@ -125,18 +125,19 @@ function Hero() {
           
           
                         </div>
-                       <div className="text-xl md:text-2xl text-white pt-2">
+                       <div className="text-xl md:text-2xl text-white italic pt-2">
                        { CounterStart && ( <Counter     
                           from={0}
                           to={3000}
                           duration={4}
                           start={CounterStart}
+                          
                           className="text-2xl font-bold bg-linear-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent"
               
                         
                         />)}
                           <span className="text-green-400  font-bold">+</span>
-                         <span className="ml-2 text-lg whitespace-nowrap md:text-2xl text-white">
+                         <span className="ml-2 text-lg whitespace-nowrap font-mono md:text-2xl text-white">
                            Active Students
                            </span>
           

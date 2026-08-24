@@ -57,3 +57,35 @@ export const Normalreveal={
 
 
 };
+
+
+
+export const PopParent = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+export const PopChild = {
+  hidden: {
+    opacity: 0,
+    scale: 0.85,
+    y: 20,
+  },
+
+  show: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+
+    transition: {
+      type: "spring",
+      stiffness: 120,
+      damping: 18,
+      mass: 0.8,
+    },
+  },
+};
