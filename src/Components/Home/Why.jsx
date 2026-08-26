@@ -18,12 +18,12 @@ return (
          
          className="max-w-8xl mx-auto ">
 
-          <h2 className="text-xl  sm:text-2xl md:text-3xl lg:text-4xl font-bold bg-linear-to-r from-emerald-100 via-white
+          <h2 className="text-xl py-1 sm:text-2xl md:text-3xl lg:text-4xl font-bold bg-linear-to-r from-emerald-100 via-white
            to-emerald-300 bg-clip-text text-transparent text-center">
             Why Choose Shikhbo AI?
           </h2>
 
-          <p className="mt-3 text-center text-base sm:text-lg md:text-xl lg:text-2xl text-emerald-100/80">
+          <p className="mt-3 md:mt-4 text-center text-base sm:text-lg md:text-xl lg:text-2xl text-emerald-100/80">
             Learn smarter. Build real projects. Become a better developer.
           </p>
 
@@ -31,7 +31,7 @@ return (
            variants={PopParent}
          initial="hidden"
           whileInView="show"
-          viewport={{ once: false,amount:0.3 }}
+          viewport={{ once: false,amount:0.2 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-4">
 
             
@@ -41,7 +41,7 @@ return (
               <div className="w-9 h-9 border border-white/20 bg-white/5 rounded-full flex items-center justify-center overflow-hidden">
           <img src="/Ai.png" className="w-9 h-9 object-contain" alt="AI"/>
            </div>
-            <p className={`${para1}`}>Learn with AI Tools</p>
+            <p className={`${para1} `}>Learn with AI Tools</p>
             <p className={`${para2}`}>Learn how to use ChatGPT and modern AI tools to code smarter, debug faster, and understand complex concepts.</p>
             </motion.div>
 

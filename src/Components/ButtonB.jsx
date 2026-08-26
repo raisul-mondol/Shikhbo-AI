@@ -24,6 +24,7 @@ function ButtonB({ children, className = "", onClick }) {
         shadow-emerald-500/40
         hover:bg-emerald-500
         focus:outline-none
+        cursor-pointer
         ${className}
       `}
     >

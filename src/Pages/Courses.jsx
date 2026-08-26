@@ -1,12 +1,12 @@
 import React from 'react'
+import Mcourses from '../Components/Mcourses/Mcourses'
+
 
 function Courses() {
   return (
     <div>
       
-      <div className='text-5xl'>
-        courses
-      </div>
+      <Mcourses/>
       
       
       </div>

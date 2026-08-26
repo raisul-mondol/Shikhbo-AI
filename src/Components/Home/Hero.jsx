@@ -18,18 +18,25 @@ function Hero() {
   hover:shadow-md hover:shadow-green-400/40 rounded-full hover:scale-200 hover:z-60 hover:rounded-md
   hover:border-none  `;
   const[CounterStart,SetCounterStart]=useState(false);
+  const [hasAnimated, setHasAnimated] = useState(
+  sessionStorage.getItem("homeAnimationDone") === "true"
+);
 
 
 
   return (
       
-    <div className="bg-[url('/herobg.jpg')] min-h-130 w-full bg-cover bg-no-repeat
+    <div className="bg-[url('/herobgc.jpg')] min-h-130 w-full bg-cover bg-no-repeat
       flex flex-col md:flex-row items-center gap-4 md:gap-3 relative ">
 
     <motion.div 
-    variants={Container}
-    initial="hidden"
-    animate="show"
+        variants={Container}
+  initial={hasAnimated ? "show" : "hidden"}
+  animate="show"
+  onAnimationComplete={() => {
+    sessionStorage.setItem("homeAnimationDone", "true");
+  }}
+
     className=' md:w-[52%] lg:w-1/2 w-full flex flex-col items-center md:items-start
      pt-4  md:self-start md:mt-16 md:px-4 md:ml-5 lg:px-6 lg:ml-10 '>
 
@@ -65,7 +72,9 @@ function Hero() {
 
 
           <div className='flex flex-col md:flex-row gap-3 md:gap-4 w-[60%]  md:w-auto '>
-          <ButtonB className='w-full md:w-auto'>
+          <ButtonB 
+           onClick={() => document.getElementById("courses").scrollIntoView()}
+          className='w-full md:w-auto'>
           <span className="flex  gap-2 md:gap-3 items-center justify-center whitespace-nowrap">
               Get Started
                 <ArrowRight
@@ -100,7 +109,7 @@ function Hero() {
 
                    <motion.div variants={item} onAnimationComplete={()=>SetCounterStart(true)}
                      
-                      className=" bg-emerald-700/20 backdrop-blur-md rounded-2xl border border-emerald-400  w-fit mt-7 
+                      className=" bg-emerald-700/20 backdrop-blur-md rounded-xl border border-emerald-400  w-fit mt-7 
                       px-8  sm:px-12 md:px-10  mb-5 relative pt-3  ">
                       
            
@@ -137,7 +146,7 @@ function Hero() {
                         
                         />)}
                           <span className="text-green-400  font-bold">+</span>
-                         <span className="ml-2 text-lg whitespace-nowrap font-mono md:text-2xl text-white">
+                         <span className="ml-2 text-lg whitespace-nowrap font-mono md:text-xl text-white">
                            Active Students
                            </span>
           
@@ -153,7 +162,14 @@ function Hero() {
     </motion.div>
 
     <motion.div 
-    variants={Normalreveal} initial="hidden" animate="show"
+    variants={Normalreveal}   initial={hasAnimated ? "show" : "hidden"}
+  animate="show"
+  onAnimationComplete={() => {
+    sessionStorage.setItem("homeAnimationDone", "true");
+  }}
+
+
+
     className=' md:h-96 md:w-[48%] lg:w-1/2 h-75 w-full  flex justify-center pt-6  '>
       <div className='bg-white/7 backdrop-blur-2xl border border-emerald-700/20 shadow-lg shadow-black/20
          lg:h-85 md:h-75 h-60 lg:w-[75%] md:w-[85%] w-[80%] sm:w-[65%] relative '>
