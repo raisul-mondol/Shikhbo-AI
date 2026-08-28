@@ -14,7 +14,8 @@
       "instructor": "Rakib Hasan",
       "instructorImage": "https://i.pravatar.cc/150?img=12",
       "price": 25000,
-      "discount": 5000,
+      "discount": 20,
+      "level":"Beginner",
       "discountPercent": 20
     },
     {
@@ -31,7 +32,8 @@
       "instructor": "Sadia Rahman",
       "instructorImage": "https://i.pravatar.cc/150?img=47",
       "price": 25000,
-      "discount": 5000,
+      "discount": 20,
+      "level":"Beginner",
       "discountPercent": 20
     },
     {
@@ -48,7 +50,8 @@
       "instructor": "Tanvir Ahmed",
       "instructorImage": "https://i.pravatar.cc/150?img=11",
       "price": 25000,
-      "discount": 5000,
+      "level":"Beginner",
+      "discount": 20,
       "discountPercent": 20
     },
     {
@@ -65,7 +68,8 @@
       "instructor": "Nusrat Jahan",
       "instructorImage": "https://i.pravatar.cc/150?img=44",
       "price": 25000,
-      "discount": 5000,
+      "level":"Advanced",
+      "discount": 35,
       "discountPercent": 20
     },
     {
@@ -82,7 +86,8 @@
       "instructor": "Imran Hossain",
       "instructorImage": "https://i.pravatar.cc/150?img=13",
       "price": 25000,
-      "discount": 5000,
+      "level":"Intermediate",
+      "discount": 25,
       "discountPercent": 20
     },
     {
@@ -99,7 +104,8 @@
       "instructor": "Arif Khan",
       "instructorImage": "https://i.pravatar.cc/150?img=68",
       "price": 25000,
-      "discount": 5000,
+      "level":"Beginner",
+      "discount": 50,
       "discountPercent": 20
     },
     {
@@ -116,7 +122,8 @@
       "instructor": "Mehedi Hasan",
       "instructorImage": "https://i.pravatar.cc/150?img=14",
       "price": 25000,
-      "discount": 5000,
+      "level":"Beginner",
+      "discount": 50,
       "discountPercent": 20
     },
     {
@@ -133,7 +140,8 @@
       "instructor": "Fahim Rahman",
       "instructorImage": "https://i.pravatar.cc/150?img=51",
       "price": 25000,
-      "discount": 5000,
+      "discount": 45,
+      "level":"Beginner",
       "discountPercent": 20
     },
     {
@@ -150,7 +158,8 @@
       "instructor": "Shakil Ahmed",
       "instructorImage": "https://i.pravatar.cc/150?img=53",
       "price": 25000,
-      "discount": 5000,
+      "level":"Advanced",
+      "discount": 50,
       "discountPercent": 20
     },
     {
@@ -167,7 +176,8 @@
       "instructor": "Rafiul Islam",
       "instructorImage": "https://i.pravatar.cc/150?img=60",
       "price": 25000,
-      "discount": 5000,
+      "level":"Intermediate",
+      "discount": 50,
       "discountPercent": 20
     },
     {
@@ -184,7 +194,8 @@
       "instructor": "Siam Chowdhury",
       "instructorImage": "https://i.pravatar.cc/150?img=33",
       "price": 25000,
-      "discount": 5000,
+      "level":"Advanced",
+      "discount": 50,
       "discountPercent": 20
     },
     {
@@ -201,7 +212,8 @@
       "instructor": "Arafat Hossain",
       "instructorImage": "https://i.pravatar.cc/150?img=56",
       "price": 25000,
-      "discount": 5000,
+      "level":"Beginner",
+      "discount": 50,
       "discountPercent": 20
     },
     {
@@ -218,7 +230,8 @@
       "instructor": "Mim Akter",
       "instructorImage": "https://i.pravatar.cc/150?img=49",
       "price": 25000,
-      "discount": 5000,
+      "level":"Intermediate",
+      "discount": 50,
       "discountPercent": 20
     },
     {
@@ -235,7 +248,8 @@
       "instructor": "Jannatul Ferdous",
       "instructorImage": "https://i.pravatar.cc/150?img=45",
       "price": 25000,
-      "discount": 5000,
+      "level":"Beginner",
+      "discount": 40,
       "discountPercent": 20
     },
     {
@@ -252,7 +266,8 @@
       "instructor": "Tahsin Ahmed",
       "instructorImage": "https://i.pravatar.cc/150?img=52",
       "price": 25000,
-      "discount": 5000,
+      "level":"Advanced",
+      "discount": 50,
       "discountPercent": 20
     },
     {
@@ -269,7 +284,8 @@
       "instructor": "Hasan Mahmud",
       "instructorImage": "https://i.pravatar.cc/150?img=67",
       "price": 25000,
-      "discount": 5000,
+      "level":"Advanced",
+      "discount": 30,
       "discountPercent": 20
     },
     {
@@ -286,7 +302,8 @@
       "instructor": "Rumana Islam",
       "instructorImage": "https://i.pravatar.cc/150?img=48",
       "price": 25000,
-      "discount": 5000,
+      "level":"Beginner",
+      "discount": 50,
       "discountPercent": 20
     },
     {
@@ -303,7 +320,8 @@
       "instructor": "Abdullah Al Mamun",
       "instructorImage": "https://i.pravatar.cc/150?img=65",
       "price": 25000,
-      "discount": 5000,
+      "level":"Intermediate",
+      "discount": 10,
       "discountPercent": 20
     },
     {
@@ -320,7 +338,8 @@
       "instructor": "Nayeem Hasan",
       "instructorImage": "https://i.pravatar.cc/150?img=69",
       "price": 25000,
-      "discount": 5000,
+      "level":"Beginner",
+      "discount": 20,
       "discountPercent": 20
     },
     {
@@ -337,7 +356,8 @@
       "instructor": "Sabbir Ahmed",
       "instructorImage": "https://i.pravatar.cc/150?img=61",
       "price": 25000,
-      "discount": 5000,
+      "level":"Advanced",
+      "discount": 30,
       "discountPercent": 20
     }
   ]

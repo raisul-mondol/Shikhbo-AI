@@ -38,7 +38,7 @@ function FCourses() {
     create, and become job-ready.
   </p>
 
-        <div className='max-w-8xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 md:mt-5 lg:mt-6 mx-auto gap-6'>
+        <div className='max-w-8xl grid grid-cols-1 items-stretch md:grid-cols-2 lg:grid-cols-3 mt-4 md:mt-5 lg:mt-6 mx-auto gap-6'>
                {courses.map((course)=>
               (
                 <CoursesCard

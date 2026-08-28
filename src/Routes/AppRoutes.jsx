@@ -7,6 +7,8 @@ import Instructors from  '../Pages/Instructors'
 import Login from '../Pages/Login'
 import Contact from '../Pages/Contact'
 import About from '../Pages/About'
+import CourseDetails from '../Components/Mcourses/CourseDetails'
+import PaymentProces from '../Components/Payment/PaymentProces'
 
 
 function AppRoutes() {
@@ -23,6 +25,8 @@ function AppRoutes() {
         <Route path="/about" element={<About/>} />
         <Route path='/contact' element={<Contact/>}   />
         <Route path="/login"  element={<Login/>}    />
+        <Route   path='/courses/:id' element={<CourseDetails/>} />
+        <Route  path="/Payment/:id" element={<PaymentProces/>}     />
 
 
 
