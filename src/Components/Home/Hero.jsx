@@ -30,20 +30,18 @@ function Hero() {
     hover:border-none
   `;
 
-  const [CounterStart,SetCounterStart] = useState(false);
-
-  // sessionStorage একবারই read হবে
   const hasAnimated =
-    sessionStorage.getItem("homeAnimationDone") === "true";
+  sessionStorage.getItem("homeAnimationDone") === "true";
 
+const [CounterStart, SetCounterStart] = useState(hasAnimated);
 
-  const handleAnimationComplete = () => {
-    if (!hasAnimated) {
-      sessionStorage.setItem("homeAnimationDone", "true");
-    }
+const handleAnimationComplete = () => {
+  if (!hasAnimated) {
+    sessionStorage.setItem("homeAnimationDone", "true");
+  }
 
-    SetCounterStart(true);
-  };
+  SetCounterStart(true);
+};
 
 
   const handleGetStarted = () => {
