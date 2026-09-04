@@ -44,7 +44,7 @@ function CoursesCard({ course }) {
           md:w-full
         "
       >
-        {/* Inner Emerald Card */}
+        
         <div
           className="
             flex
@@ -57,7 +57,7 @@ function CoursesCard({ course }) {
             bg-emerald-900
           "
         >
-          {/* ================= IMAGE ================= */}
+        
 
           <div className="relative overflow-hidden">
             <img
@@ -101,7 +101,7 @@ function CoursesCard({ course }) {
             )}
           </div>
 
-          {/* ================= CATEGORY + LEVEL ================= */}
+    
 
           <div
             className="
@@ -143,9 +143,7 @@ function CoursesCard({ course }) {
             </p>
           </div>
 
-          {/* ================= CONTENT ================= */}
-
-          {/* flex-1 keeps all cards equal height */}
+       
           <div
             className="
               flex
@@ -185,8 +183,7 @@ function CoursesCard({ course }) {
               {course.description}
             </p>
 
-            {/* ================= COURSE INFO ================= */}
-
+           
             <div
               className="
                 mt-4
@@ -286,7 +283,7 @@ function CoursesCard({ course }) {
                 <span>{course.students}</span>
               </span>
 
-              {/* Certificate */}
+             
 
               <span
                 className="
@@ -325,7 +322,7 @@ function CoursesCard({ course }) {
               </span>
             </div>
 
-            {/* ================= DIVIDER ================= */}
+       
 
             <div
               className="
@@ -338,7 +335,7 @@ function CoursesCard({ course }) {
               "
             />
 
-            {/* ================= INSTRUCTOR ================= */}
+          
 
             <div className="flex items-center gap-3">
               <img
@@ -384,7 +381,6 @@ function CoursesCard({ course }) {
               </div>
             </div>
 
-            {/* ================= DIVIDER ================= */}
 
             <div
               className="
@@ -397,7 +393,7 @@ function CoursesCard({ course }) {
               "
             />
 
-            {/* ================= PRICE ================= */}
+           
 
             <div
               className="
@@ -439,9 +435,7 @@ function CoursesCard({ course }) {
               </div>
             </div>
 
-            {/* ================= BUTTONS ================= */}
-
-            {/* mt-auto stays here */}
+            
             <div
               className="
                 mt-auto

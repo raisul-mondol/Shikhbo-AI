@@ -1,56 +1,35 @@
-import React, { useEffect, useState } from 'react'
-import { getCourses } from '../Components/Services/Coursesapi'
+import { useEffect, useState } from "react";
+import { getCourses } from "../Components/Services/Coursesapi";
 
-function useCoursesHook(params) {
+function useCoursesHook() {
+  const [courses, setCourses] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-    const [courses,setCourses]=useState([])
-    const [loading,setLoading]=useState(true)
-    const [error,setError]=useState(null)
+  const fetchCourses = async () => {
+    try {
+      setLoading(true);
+      setError(null);
 
+      const data = await getCourses();
 
-     const fetchcourses = async()=>
-        {
-            try {
-             setLoading(true);
-             setError(null);
+      setCourses(data);
+    } catch (error) {
+      setError("Failed to load Courses");
+    } finally {
+      setLoading(false);
+    }
+  };
 
-             const data=await getCourses(params);
-
-             setCourses(data);
-
-
-            }catch(error)
-            {
-                setError(error.response?.data?.message || "Failed to load Courses")
-            } finally
-            {
-                setLoading(false);
-            }
-
-        }
-
-    useEffect(()=>
-    {
-       fetchcourses();
-
-    },[params])
-
-
+  useEffect(() => {
+    fetchCourses();
+  }, []);
 
   return {
     courses,
     loading,
     error
-  }
-    
-        
-        
-        
-        
-        
-        
-        
-  
+  };
 }
 
-export default useCoursesHook
+export default useCoursesHook;
