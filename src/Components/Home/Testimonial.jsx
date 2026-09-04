@@ -54,7 +54,7 @@ const Testimonial = () => {
     >
       <div className="mx-auto max-w-7xl">
 
-        {/* ================= HEADING ================= */}
+     
 
         <div className="mb-10 text-center sm:mb-14">
           <p
@@ -98,7 +98,6 @@ const Testimonial = () => {
           </p>
         </div>
 
-        {/* ================= SLIDER ================= */}
 
         <div className="relative w-full overflow-hidden">
 
@@ -120,7 +119,7 @@ const Testimonial = () => {
             "
           />
 
-          {/* Right Gradient */}
+          
           <div
             className="
               pointer-events-none
@@ -152,7 +151,7 @@ const Testimonial = () => {
               },
             }}
           >
-            {/* ================= FIRST LIST ================= */}
+            
 
             {testimonials.map((student) => (
               <div
@@ -176,7 +175,7 @@ const Testimonial = () => {
                   lg:p-8
                 "
               >
-                {/* Quote */}
+               
 
                 <FaQuoteLeft
                   className="
@@ -187,7 +186,6 @@ const Testimonial = () => {
                   "
                 />
 
-                {/* Message */}
 
                 <p
                   className="
@@ -202,7 +200,7 @@ const Testimonial = () => {
                   "{student.message}"
                 </p>
 
-                {/* Student */}
+                
 
                 <div
                   className="
@@ -264,7 +262,6 @@ const Testimonial = () => {
               </div>
             ))}
 
-            {/* ================= DUPLICATE LIST ================= */}
 
             {testimonials.map((student) => (
               <div
@@ -288,7 +285,7 @@ const Testimonial = () => {
                   lg:p-8
                 "
               >
-                {/* Quote */}
+                
 
                 <FaQuoteLeft
                   className="
@@ -299,7 +296,7 @@ const Testimonial = () => {
                   "
                 />
 
-                {/* Message */}
+                
 
                 <p
                   className="
@@ -314,7 +311,7 @@ const Testimonial = () => {
                   "{student.message}"
                 </p>
 
-                {/* Student */}
+               
 
                 <div
                   className="

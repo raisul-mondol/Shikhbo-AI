@@ -8,7 +8,7 @@ const Contact = () => {
     >
       <div className="max-w-7xl mx-auto">
 
-        {/* ================= Heading ================= */}
+       
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
 
           <p className="text-emerald-300 text-sm sm:text-base font-semibold uppercase tracking-[0.2em] mb-3">
@@ -30,12 +30,9 @@ const Contact = () => {
         </div>
 
 
-        {/* ================= Main Content ================= */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
-          {/* =====================================================
-              LEFT SIDE - CONTACT INFORMATION
-          ====================================================== */}
+        
           <div className="space-y-6">
 
             <div>
@@ -55,12 +52,12 @@ const Contact = () => {
             </div>
 
 
-            {/* ================= Email ================= */}
+           
             <div className="flex items-start gap-4 bg-emerald-800 border border-emerald-700 rounded-2xl p-4 sm:p-5">
 
               <div className="w-11 h-11 sm:w-12 sm:h-12 shrink-0 rounded-full bg-emerald-700 flex items-center justify-center">
 
-                {/* Email SVG */}
+               
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -107,12 +104,11 @@ const Contact = () => {
             </div>
 
 
-            {/* ================= Phone ================= */}
             <div className="flex items-center gap-4 bg-emerald-800 border border-emerald-700 rounded-2xl p-4 sm:p-5">
 
               <div className="w-11 h-11 sm:w-12 sm:h-12 shrink-0 rounded-full bg-emerald-700 flex items-center justify-center">
 
-                {/* Phone SVG */}
+               
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -148,12 +144,11 @@ const Contact = () => {
             </div>
 
 
-            {/* ================= Location ================= */}
             <div className="flex items-start gap-4 bg-emerald-800 border border-emerald-700 rounded-2xl p-4 sm:p-5">
 
               <div className="w-11 h-11 sm:w-12 sm:h-12 shrink-0 rounded-full bg-emerald-700 flex items-center justify-center">
 
-                {/* Location SVG */}
+                
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -200,9 +195,6 @@ const Contact = () => {
           </div>
 
 
-          {/* =====================================================
-              RIGHT SIDE - CONTACT FORM
-          ====================================================== */}
           <div className="bg-emerald-800 border border-emerald-700 rounded-2xl sm:rounded-3xl p-5 sm:p-7 lg:p-9">
 
             <h3 className="text-xl sm:text-2xl font-bold mb-6">
@@ -212,7 +204,7 @@ const Contact = () => {
 
             <form className="space-y-5">
 
-              {/* ================= Name ================= */}
+              
               <div>
 
                 <label
@@ -236,7 +228,7 @@ const Contact = () => {
               </div>
 
 
-              {/* ================= Email ================= */}
+           
               <div>
 
                 <label
@@ -260,7 +252,6 @@ const Contact = () => {
               </div>
 
 
-              {/* ================= Subject ================= */}
               <div>
 
                 <label
@@ -284,7 +275,6 @@ const Contact = () => {
               </div>
 
 
-              {/* ================= Message ================= */}
               <div>
 
                 <label
@@ -309,7 +299,7 @@ const Contact = () => {
               </div>
 
 
-              {/* ================= Submit ================= */}
+              
               <button
                 type="submit"
                 className="w-full py-3.5 rounded-xl

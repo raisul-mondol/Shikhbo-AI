@@ -8,7 +8,7 @@ const About = () => {
     >
       <div className="max-w-7xl mx-auto">
 
-        {/* ================= Heading ================= */}
+       
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
 
           <p className="text-emerald-300 text-sm sm:text-base font-semibold uppercase tracking-[0.2em] mb-3">
@@ -31,10 +31,8 @@ const About = () => {
         </div>
 
 
-        {/* ================= Main Content ================= */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-          {/* ================= Left Content ================= */}
           <div className="space-y-5 sm:space-y-6">
 
             <div>
@@ -132,7 +130,6 @@ const About = () => {
             </div>
 
 
-            {/* Button */}
             <a
               href="#courses"
               className="inline-block mt-3 px-6 sm:px-7 py-3 rounded-full
@@ -149,7 +146,6 @@ const About = () => {
           
           <div className="grid grid-cols-2 gap-3 sm:gap-5">
 
-            {/* Card 1 */}
             <div
               className="bg-emerald-800 border border-emerald-700
               rounded-xl sm:rounded-2xl p-5 sm:p-7
@@ -166,7 +162,6 @@ const About = () => {
             </div>
 
 
-            {/* Card 2 */}
             <div
               className="bg-emerald-800 border border-emerald-700
               rounded-xl sm:rounded-2xl p-5 sm:p-7
@@ -183,7 +178,6 @@ const About = () => {
             </div>
 
 
-            {/* Card 3 */}
             <div
               className="bg-emerald-800 border border-emerald-700
               rounded-xl sm:rounded-2xl p-5 sm:p-7
