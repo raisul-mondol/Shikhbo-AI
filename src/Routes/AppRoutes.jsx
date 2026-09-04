@@ -9,12 +9,13 @@ import Contact from '../Pages/Contact'
 import About from '../Pages/About'
 import CourseDetails from '../Components/Mcourses/CourseDetails'
 import PaymentProces from '../Components/Payment/PaymentProces'
+import ScrollToTop from "../Components/ScrollToTop";
 
 
 function AppRoutes() {
   return (
     <div>
-        
+        <ScrollToTop/>
         <Routes>
             
         <Route element={<MainLayouts/>}>
