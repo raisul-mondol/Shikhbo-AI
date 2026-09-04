@@ -53,7 +53,7 @@ function Hero() {
          className='h-18 w-18 -ml-6'
         
         />
-         <div className=' text-white text-lg md:text-xl -ml-5'>AI-Powered Learning </div>
+         <div className=' text-white text-lg  px-1 -ml-5'>AI-Enhanced Learning</div>
 
       </motion.div>
       <motion.p
@@ -103,7 +103,7 @@ function Hero() {
                   ))}
                   <FaStarHalfAlt className="text-yellow-400" size={20} />
 
-            <span className="ml-1 text-white italic text-xl">
+            <span className="ml-1 text-white italic text-lg">
             { CounterStart && (  <Counter from={0} to={4.9} decimals={1} start={CounterStart} >4.9</Counter>)}/5<span className='text-yellow-400 font-semibold'> Rating</span> </span>
                        </motion.div>
 
@@ -146,7 +146,7 @@ function Hero() {
                         
                         />)}
                           <span className="text-green-400  font-bold">+</span>
-                         <span className="ml-2 text-lg whitespace-nowrap font-mono md:text-xl text-white">
+                         <span className="ml-2 text-base whitespace-nowrap font-mono md:text-lg text-white">
                            Active Students
                            </span>
           
@@ -186,25 +186,25 @@ function Hero() {
 
           </div>
 
-          <div className='bg-emerald-700 rounded-md absolute -right-4 -top-7 md:-top-8 font-semibold text-white px-2 sm:px-3 md:px-4 lg:px-5 sm:text-md md:text-lg'>
+          <div className='bg-emerald-700/20 backdrop-blur-md rounded-xl border border-emerald-400  absolute -right-4 -top-7 md:-top-8 font-semibold text-white px-2 sm:px-3 md:px-4 lg:px-5 text-sm sm:text-md md:text-base'>
             Practical Learning
           </div>
 
-          <div className=' bg-emerald-700/20 backdrop-blur-md rounded-2xl border border-emerald-400 
+          <div className=' bg-emerald-700/20 backdrop-blur-md rounded-xl border border-emerald-400 
           flex items-center gap-1 sm:gap-2 top-2 -left-8  md:-left-10 lg:-left-14 absolute px-1 py-2 sm:py-3 md:py-2'>
 
             <div>
-              <FaChalkboardTeacher  className='text-cyan-500 h-5 w-5 md:h-6 md:w-6 mt-1' />
+              <FaChalkboardTeacher  className='text-cyan-500 h-5 w-5  mt-1' />
             </div>
             <div>
-              <p className='text-white text-sm sm:text-md md:text-lg  font-semibold'>Expert Instructors</p>
+              <p className='text-white text-sm sm:text-md md:text-base  font-semibold'>Expert Instructors</p>
             </div>
 
           </div>
 
-          <div className=' bg-emerald-700/20 backdrop-blur-md rounded-2xl border border-emerald-400 
+          <div className=' bg-emerald-700/20 backdrop-blur-md rounded-xl border border-emerald-400 
             bottom-4 -right-4 sm:-right-8 md:-right-3 lg:-right-10 absolute text-white px-1 md:px-2 py-1 md:py-2
-             sm:py-2 text-sm md:text-lg font-semibold'>
+             sm:py-2 text-sm md:text-base font-semibold'>
             <p>Job-Ready Skills</p>
 
           </div>

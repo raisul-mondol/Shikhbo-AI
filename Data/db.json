@@ -360,5 +360,46 @@
       "discount": 30,
       "discountPercent": 20
     }
-  ]
+  ],
+
+
+
+
+  "testimonials": [
+  {
+    "id": 1,
+    "name": "Sarah Ahmed",
+    "role": "Web Development Student",
+    "message": "The courses are well structured and very easy to understand. I was able to improve my skills and build real projects with confidence.",
+    "image": "https://i.pravatar.cc/150?img=1"
+  },
+  {
+    "id": 2,
+    "name": "John Smith",
+    "role": "Frontend Developer",
+    "message": "This learning platform helped me understand modern web development concepts clearly. The practical lessons made learning much more enjoyable.",
+    "image": "https://i.pravatar.cc/150?img=12"
+  },
+  {
+    "id": 3,
+    "name": "Emily Johnson",
+    "role": "Programming Student",
+    "message": "I really enjoyed the learning experience and the quality of the content. Everything was explained step by step in a simple and clear way.",
+    "image": "https://i.pravatar.cc/150?img=5"
+  },
+  {
+    "id": 4,
+    "name": "Michael Brown",
+    "role": "Full Stack Developer",
+    "message": "The courses provided practical knowledge that I could immediately apply to my projects. It has been a great experience for improving my skills.",
+    "image": "https://i.pravatar.cc/150?img=11"
+  },
+  {
+    "id": 5,
+    "name": "Sophia Williams",
+    "role": "UI/UX Design Student",
+    "message": "The platform is easy to use and the lessons are very clear and helpful. I feel much more confident about my professional journey now.",
+    "image": "https://i.pravatar.cc/150?img=9"
+  }
+]
 }

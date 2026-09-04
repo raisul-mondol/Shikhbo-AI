@@ -3,6 +3,7 @@ import Hero from '../Components/Home/Hero'
 import Why from '../Components/Home/Why'
 import FCourses from '../Components/Home/FCourses'
 import LearnigPath from '../Components/Home/LearnigPath'
+import Testimonial from '../Components/Home/Testimonial'
 
 
 
@@ -19,6 +20,7 @@ function Home() {
         <Why/>
         <FCourses />
         <LearnigPath/>
+        <Testimonial/>
        
         
       </div>

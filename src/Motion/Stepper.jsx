@@ -68,10 +68,8 @@ export default function Stepper({
         w-full
         items-start
         justify-center
-        bg-gradient-to-br
-        from-emerald-950
-        via-emerald-900
-        to-emerald-950
+        bg-emerald-950/70
+        rounded-md
         px-3
         pt-6
         pb-10
@@ -174,7 +172,7 @@ export default function Stepper({
           {stepsArray[currentStep - 1]}
         </StepContentWrapper>
 
-        {/* Footer */}
+        
         {!isCompleted && (
           <div
             className={`
@@ -197,7 +195,7 @@ export default function Stepper({
                 }
               `}
             >
-              {/* Back Button */}
+              
               {currentStep !== 1 && (
                 <button
                   onClick={handleBack}
@@ -264,9 +262,7 @@ export default function Stepper({
   );
 }
 
-/* ================================= */
-/* Step Content Wrapper */
-/* ================================= */
+
 
 function StepContentWrapper({
   isCompleted,
@@ -315,9 +311,7 @@ function StepContentWrapper({
   );
 }
 
-/* ================================= */
-/* Slide Transition */
-/* ================================= */
+
 
 function SlideTransition({
   children,
@@ -357,9 +351,6 @@ function SlideTransition({
   );
 }
 
-/* ================================= */
-/* Step Animation */
-/* ================================= */
 
 const stepVariants = {
   enter: (dir) => ({
@@ -378,9 +369,7 @@ const stepVariants = {
   }),
 };
 
-/* ================================= */
-/* Step */
-/* ================================= */
+
 
 export function Step({ children }) {
   return (
@@ -390,9 +379,6 @@ export function Step({ children }) {
   );
 }
 
-/* ================================= */
-/* Step Indicator */
-/* ================================= */
 
 function StepIndicator({
   step,
@@ -421,7 +407,7 @@ function StepIndicator({
       onClick={handleClick}
       className={`
         relative
-        flex-shrink-0
+        shrink-0
         outline-none
         focus:outline-none
         ${
@@ -512,9 +498,7 @@ function StepIndicator({
   );
 }
 
-/* ================================= */
-/* Step Connector */
-/* ================================= */
+
 
 function StepConnector({ isComplete }) {
   const lineVariants = {
@@ -567,9 +551,7 @@ function StepConnector({ isComplete }) {
   );
 }
 
-/* ================================= */
-/* Check Icon */
-/* ================================= */
+
 
 function CheckIcon(props) {
   return (

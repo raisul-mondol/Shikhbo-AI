@@ -6,13 +6,12 @@ function LearnigPath() {
     <section
       className="
         w-full
-        bg-emerald-950
+        bg-emerald-900
         px-4
-        py-14
+        py-6
         sm:px-6
         md:px-8
-        lg:px-12
-        lg:py-20
+        
       "
     >
       
@@ -288,7 +287,7 @@ function LearnigPath() {
               py-4
             "
           >
-            <p className="text-xs uppercase tracking-wider text-emerald-400/70">
+            <p className="text-xs uppercase tracking-wider text-emerald-400">
               Final Goal
             </p>
 
@@ -327,11 +326,11 @@ function OutcomeItem({ title, description }) {
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-white">
+        <h4 className="text-sm md:text-base font-semibold text-white">
           {title}
         </h4>
 
-        <p className="mt-1 text-xs leading-5 text-emerald-100/50">
+        <p className="mt-1 text-xs md:text-sm leading-5 text-emerald-100">
           {description}
         </p>
       </div>
